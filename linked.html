@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Linkedin</title>
+  <!--lınked css-->
+  <link rel="stylesheet" href="lınked.css">
+</head>
+
+<body class="bg-light">
+  <!--nav bar-->
+  <div>
+    <nav class="navbar navbar-white bg-white">
+      <span>
+        <form style="padding-left:233px;" class="form-inline">
+          <img style="height:47px; margin-left:24px;"
+            src="data:image/jpeg;base64,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"
+            alt="">
+          <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </span>
+
+      <div class="d-flex flex-wrap align-items-center text-black-50" style="margin-right: 340px;">
+        <div class="d-flex align-items-center mr-3 mb-3">
+          <i class="fa-solid fa-house"></i>
+          <small class="ml-1">house</small>
+        </div>
+        <div class="d-flex align-items-center mr-3 mb-3">
+          <i class="fa-solid fa-users"></i>
+          <small class="ml-1">users</small>
+        </div>
+        <div class="d-flex align-items-center mr-3 mb-3">
+          <i class="fa-sharp fa-solid fa-toolbox"></i>
+          <small class="ml-1">Toolbox</small>
+        </div>
+        <div class="d-flex align-items-center mr-3 mb-3">
+          <i class="fa-solid fa-folder"></i>
+          <small class="ml-1">folder</small>
+        </div>
+        <div class="d-flex align-items-center mr-3 mb-3">
+          <i class="fa-solid fa-bell"></i>
+          <small class="ml-1">Bell</small>
+        </div>
+        <div class="d-flex align-items-center" style="padding-bottom:16px;">
+          <i class="fa-solid fa-circle-user"></i>
+          <small class="ml-1">Me</small>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div style="width:260px; height:238px; box-shadow:-webkit-box-shadow-2px -5px 4px 8px rgba(0,0,0,0.09);
+       -moz-box-shadow: -2px -5px -4px -8px rgba(0,0,0,0.09);
+       box-shadow:-2px -5px -4px -8px rgba (0,0,0,0.09);" class="card">
+          <div class="card-body">
+            <img style="width:270px; height:109px; padding-right:46px; "
+              src="https://i2.milimaj.com/i/milliyet/75/1200x675/60bf6eab86b244126c574d74.jpg" class="" alt="">
+            <i style="margin-left:89px; font-size:32px;  " class="fa-regular fa-user "></i> <br>
+            <b style="font-family: 'Times New Roman', Times, serif; margin-left:34px;">Somanath Guoder</b>
+            <p style="margin-left:34px;" class="text-black-50 ">fsgarti@gmail.com</p>
+
+
+          </div>
+        </div>
+
+        <div style="margin-top: 15px; width:260px; height:105px; border-radius:11px;" class="card">
+          <div class="card-body">
+            <p class="text-black-50">
+              Who Viewed you
+              <span style="color: blue; margin-left:41px;"><b>2,453</b></span>
+            </p>
+            <p>
+              <span style="margin-right:23px; border-radius:5px;" class="text-black-50"> Views on post</span>
+              <span><b style="color: blue; margin-left:41px;">2,650</b></span>
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 13px; width:260px; height:190px; margin-top:11px; border-radius:11px; " class="card">
+          <div class="card-body">
+            <h5 style="font-family: 'Times New Roman', Times, serif;">Recent</h5>
+
+            <a style="margin-bottom:4px;" href="" class="text-black-50">#</a>
+            <span> <a href="" class="text-black-50"> reactjs</a></span> <br>
+
+            <a href="" class="text-black-50">#</a>
+            <span> <a href="" class="text-black-50">proramming</a></span> <br>
+
+            <a href="" class="text-black-50">#</a>
+            <span> <a href="" class="text-black-50">softrwareengineering</a></span> <br>
+
+            <a href="" class="text-black-50">#</a>
+            <span> <a href="" class="text-black-50">dering</a></span> <br>
+
+            <a href="" class="text-black-50">#</a>
+            <span> <a href="" class="text-black-50">developer</a></span> <br>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div style="border-radius:11px; height:126px; width:490px; margin-right:53px; margin-bottom:27px;" class="card">
+          <div class="card-body">
+            <div style="border-radius:22px; height:44px;" class="card">
+              <div class="card-body">
+                <i class="fa-solid fa-pen "></i>
+              </div>
+            </div>
+
+            <div class="icon">
+              <i style="color: rgb(32, 131, 197); margin-left:9px;" class="fa-sharp fa-solid fa-image"></i>
+              <span class="text-black-50 ">photo</span>
+              <i style="color:orange; margin-left:45px;" class="fa-solid fa-film"></i>
+              <span class="text-black-50">video</span>
+              <i style="margin-left:45px;" class="fa-solid fa-calendar-days text-black-50"></i>
+              <span class="text-black-50">event</span>
+              <i style="color:green; margin-left:45px;" class="fa-solid fa-bars"></i>
+              <span class="text-black-50">write article</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="border-radius:11px; height:138px; width:490px; margin-right:53px" class="card">
+          <div class="card-body">
+            <i style="font-size:22px;" class="fa-solid fa-user"></i>
+            <span style="font-family: 'Times New Roman', Times, serif; ">Somanath Guoder</span> <br>
+            <small style="margin-left:25px; " class="text-black-50">Job Description</small> <br>
+            <b style="margin-right:9px;">Message here</b>
+
+            <div>
+              <i style="margin-left:30px; margin-top:9px; font-size:22px;"
+                class="fa-solid fa-thumbs-up text-black-50"></i>
+              <small><b class="text-black-50">Like</b></small>
+              <i style="margin-left:29px;" class="fa-solid fa-message text-black-50"></i>
+              <span class="text-black-50">Comment</span>
+              <i style="margin-left:29px;" class="fa-solid fa-share-nodes text-black-50"></i>
+              <span class="text-black-50">Share</span>
+              <i style="margin-left:29px;" class="fa-solid fa-paper-plane text-black-50"></i>
+              <span class="text-black-50">Send</span>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <div style="border-radius:11px; height:138px; width:490px; margin-right:53px; margin-top:19px;" class="card">
+          <div class="card-body">
+            <i style="font-size:22px;" class="fa-solid fa-user"></i>
+            <span style="font-family: 'Times New Roman', Times, serif; ">Somanath Guoder</span> <br>
+            <small style="margin-left:25px; " class="text-black-50">Job Description</small> <br>
+            <b style="margin-right:9px;">Message here</b>
+
+            <div>
+              <i style="margin-left:30px; margin-top:9px; font-size:22px;"
+                class="fa-solid fa-thumbs-up text-black-50"></i>
+              <small><b class="text-black-50">Like</b></small>
+              <i style="margin-left:29px;" class="fa-solid fa-message text-black-50"></i>
+              <span class="text-black-50">Comment</span>
+              <i style="margin-left:29px;" class="fa-solid fa-share-nodes text-black-50"></i>
+              <span class="text-black-50">Share</span>
+              <i style="margin-left:29px;" class="fa-solid fa-paper-plane text-black-50"></i>
+              <span class="text-black-50">Send</span>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div style="border-radius:11px; height:138px; width:490px; margin-right:53px; margin-top:19px;" class="card">
+          <div class="card-body">
+            <i style="font-size:22px;" class="fa-solid fa-user"></i>
+            <span style="font-family: 'Times New Roman', Times, serif; ">Somanath Guoder</span> <br>
+            <small style="margin-left:25px; " class="text-black-50">Job Description</small> <br>
+            <b style="margin-right:9px;">Message here</b>
+
+            <div>
+              <i style="margin-left:30px; margin-top:9px; font-size:22px;"
+                class="fa-solid fa-thumbs-up text-black-50"></i>
+              <small><b class="text-black-50">Like</b></small>
+              <i style="margin-left:29px;" class="fa-solid fa-message text-black-50"></i>
+              <span class="text-black-50">Comment</span>
+              <i style="margin-left:29px;" class="fa-solid fa-share-nodes text-black-50"></i>
+              <span class="text-black-50">Share</span>
+              <i style="margin-left:29px;" class="fa-solid fa-paper-plane text-black-50"></i>
+              <span class="text-black-50">Send</span>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <div style="border-radius:11px; height:138px; width:490px; margin-right:53px; margin-top:19px;" class="card">
+          <div class="card-body">
+            <i style="font-size:22px;" class="fa-solid fa-user"></i>
+            <span style="font-family: 'Times New Roman', Times, serif; ">Somanath Guoder</span> <br>
+            <small style="margin-left:25px; " class="text-black-50">Job Description</small> <br>
+            <b style="margin-right:9px;">Message here</b>
+
+            <div>
+              <i style="margin-left:30px; margin-top:9px; font-size:22px;"
+                class="fa-solid fa-thumbs-up text-black-50"></i>
+              <small><b class="text-black-50">Like</b></small>
+              <i style="margin-left:29px;" class="fa-solid fa-message text-black-50"></i>
+              <span class="text-black-50">Comment</span>
+              <i style="margin-left:29px;" class="fa-solid fa-share-nodes text-black-50"></i>
+              <span class="text-black-50">Share</span>
+              <i style="margin-left:29px;" class="fa-solid fa-paper-plane text-black-50"></i>
+              <span class="text-black-50">Send</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card" style="margin: 20px auto; width: 90%; border-radius: 14px;">
+              <div class="card-body">
+                <small><b>LinkedIn Clone</b></small>
+                <br>
+                <small>Coding LinkedIn Clone</small>
+                <br>
+                <small class="text-black-50">Top news-4500 readers</small>
+                <br>
+                <small>Coding LinkedIn Clone</small>
+                <br>
+                <small class="text-black-50">Top news-4500 readers</small>
+                <br>
+                <small>Coding LinkedIn Clone</small>
+                <br>
+                <small class="text-black-50">Top news-4500 readers</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
